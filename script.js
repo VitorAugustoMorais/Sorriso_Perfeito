@@ -1,10 +1,12 @@
 const closeMenu = document.getElementById('closeMenu')
 const openMenu = document.getElementById('openMenu')
 const closeWhatsapp = document.getElementById('closeWhatsapp')
+const whatsapp = document.getElementById('whatsapp')
 
 closeMenu.addEventListener('click', menu)
 openMenu.addEventListener('click', menu)
 closeWhatsapp.addEventListener('click', closedWhatsapp)
+whatsapp.addEventListener('click', sendWhatsapp)
 
 function menu() {
     const menu = document.getElementById('menu')
@@ -25,4 +27,10 @@ function menu() {
 function closedWhatsapp() {
     const btnWhatsapp = document.getElementById('btnWhatsapp')
     btnWhatsapp.style.display = 'none'
+}
+
+function sendWhatsapp() {
+    const message = 'Olá, quero marcar uma avaliação!'
+    const phone = "945298541"
+    window.open(`https://wa.me/${phone}?text=${message}`, "_blank")
 }

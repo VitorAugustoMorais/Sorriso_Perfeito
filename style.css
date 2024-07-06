@@ -36,6 +36,7 @@ footer {
     display: flex;
     align-items: center;
     width: 100vw;
+    z-index: 999;
 }
 
 header {
@@ -50,6 +51,7 @@ footer {
     text-align: center;
     padding: .5rem;
     z-index: 99;
+    margin: 3rem 0;
 }
 
 footer p {
@@ -111,6 +113,7 @@ p {
     gap: 5rem;
     background-color: var(--background-header-footer);
     display: none;
+    overflow: hidden;
 }
 
 #menu li {
@@ -136,23 +139,20 @@ p {
 #btnWhatsapp,
 #btnWhatsapp img,
 #btnWhatsapp span {
-    z-index: 9;
     position: fixed;
     bottom: 0;
     right: 0;
+    z-index: 998;
 }
 
 #whatsapp {
     height: 3rem;
     margin: 1.5rem 2rem;
-    z-index: inherit;
 }
 
 #closeWhatsapp {
     height: 2rem;
     margin: 4.5rem 1rem;
-    z-index: 1 !important; 
-    z-index: 9999999;
 }
 
 #btnWhatsapp span {
@@ -160,10 +160,9 @@ p {
     background-color: var(--ballon-whatsapp);
     width: 8rem;
     padding: .5rem;
-    box-shadow: #000 1px 1px 10px ;
+    box-shadow: #000 1px 1px 10px;
     text-align: center;
     font-weight: 600;
     border-radius: 34.5px 34.5px 0 34.5px;
     font-size: .8rem;
-    z-index: initial;
 }
