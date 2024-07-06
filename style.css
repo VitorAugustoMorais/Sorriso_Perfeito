@@ -12,6 +12,7 @@
     --background-page: #F5F5F7;
     --background-header-footer: #035AA6;
     --color-header-footer: #F5F5F7;
+    --ballon-whatsapp: #D9D9D9;
 }
 
 html {
@@ -28,12 +29,14 @@ body {
     height: 100%;
 }
 
-header, footer {
+header,
+footer {
     background-color: var(--background-header-footer);
     color: var(--color-header-footer);
     display: flex;
     align-items: center;
     width: 100vw;
+    z-index: 999;
 }
 
 header {
@@ -41,15 +44,14 @@ header {
     justify-content: space-between;
     left: 0;
     padding: .3rem 1rem;
-    /* max-height: 81px; */
 }
 
 footer {
-    /* position: absolute; */
-    /* flex-direction: column; */
+    flex-direction: column;
     text-align: center;
     padding: .5rem;
     z-index: 99;
+    margin: 3rem 0;
 }
 
 footer p {
@@ -57,13 +59,10 @@ footer p {
     font-weight: 500;
 }
 
-footer img {
-    height: 50px;
-}
-
-h2, h3, p {
-    /* padding: 0 .5rem; */
-    margin: 1rem  .8rem;
+h2,
+h3,
+p {
+    margin: 1rem .8rem;
     text-align: justify;
 }
 
@@ -75,7 +74,8 @@ h2 {
 h3 {
     font-size: 1.2rem;
 }
-p {    
+
+p {
     text-align: center;
 }
 
@@ -102,13 +102,12 @@ p {
     margin: .5rem .65rem;
     height: 50px;
     display: none;
-    /* display: inline; */
-    z-index: 99;
+    z-index: 1001;
 }
 
 #menu {
     position: absolute;
-    z-index: 98;
+    z-index: 1000;
     left: 0;
     top: 0;
     height: 100vh;
@@ -122,6 +121,7 @@ p {
     gap: 5rem;
     background-color: var(--background-header-footer);
     display: none;
+    overflow: hidden;
 }
 
 #menu li {
@@ -142,4 +142,35 @@ p {
 
 .bold {
     font-weight: bold;
+}
+
+#btnWhatsapp,
+#btnWhatsapp img,
+#btnWhatsapp span {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 998;
+}
+
+#whatsapp {
+    height: 3rem;
+    margin: 1.5rem 2rem;
+}
+
+#closeWhatsapp {
+    height: 2rem;
+    margin: 4.5rem 1rem;
+}
+
+#btnWhatsapp span {
+    margin: 3.9rem 5rem;
+    background-color: var(--ballon-whatsapp);
+    width: 8rem;
+    padding: .5rem;
+    box-shadow: #000 1px 1px 10px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 34.5px 34.5px 0 34.5px;
+    font-size: .8rem;
 }
