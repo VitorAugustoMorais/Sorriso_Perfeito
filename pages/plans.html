@@ -8,7 +8,8 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Sorriso Perfeito">
     <meta property="og:image" content="https://sorriso-perfeito.vercel.app/img/photoMeta.jpg">
-    <meta property="og:description" content="Na Clínica Sorriso Perfeito estamos comprometidos em transformar e melhorar sua saúde bucal. Agende sua consulta hoje mesmo e sorria com confiança, sabendo que está nas mãos de especialistas dedicados ao seu bem-estar!">
+    <meta property="og:description"
+        content="Na Clínica Sorriso Perfeito estamos comprometidos em transformar e melhorar sua saúde bucal. Agende sua consulta hoje mesmo e sorria com confiança, sabendo que está nas mãos de especialistas dedicados ao seu bem-estar!">
     <meta property="og:site_name" content="Sorriso Perfeito">
 
     <link rel="stylesheet" href="../style/style.css">
@@ -23,10 +24,18 @@
             <img src="../img/menu.svg" alt="buttom menu" id="openMenu" data-condition="on">
             <img src="../img/closeMenu.svg" alt="buttom menu" id="closeMenu">
             <ul id="menu">
-                <a href="../index.html"><li >HOME</li></a>
-                <a href="sobre.html"><li>SOBRE NÓS</li></a>
-                <a href="#"><li id="pageCurrent">PLANOS DE TRATAMENTOS</li></a>
-                <a href="contact.html"><li>CONTATO</li></a>
+                <a href="../index.html">
+                    <li>HOME</li>
+                </a>
+                <a href="sobre.html">
+                    <li>SOBRE NÓS</li>
+                </a>
+                <a href="#">
+                    <li id="pageCurrent">PLANOS DE TRATAMENTOS</li>
+                </a>
+                <a href="contact.html">
+                    <li>CONTATO</li>
+                </a>
                 <img src="../img/photoMeta.jpg" alt="logo" id="logoTwo">
             </ul>
         </nav>
@@ -37,58 +46,118 @@
         <img src="../img/whatsapp.svg" alt="whatsapp" id="whatsapp">
         <img src="../img/closeWhatsapp.svg" alt="fechar whatsapp" id="closeWhatsapp">
     </div>
-    
+
     <main>
         <div id="banner">
-            <img src="../img/photoAbout.jpg" alt="Consultório">
+            <img src="../img/phothoPlans.jpg" alt="Mulher fazendo uma avaliação">
         </div>
-        <h2>SOBRE NÓS</h2>
-        <p>Bem-vindo à Clínica Sorriso Perfeito, onde sua saúde bucal é nossa prioridade. Localizada no coração da nossa comunidade, somos dedicados a oferecer cuidados odontológicos de excelência em um ambiente acolhedor e amigável.</p>
-        <h3 class="h3Center">Nossa Missão</h3>
-        <p>Na Clínica Sorriso Perfeito, nossa missão é proporcionar a você e sua família tratamentos odontológicos de alta qualidade, focados na prevenção, diagnóstico e tratamento de problemas dentários. Nosso objetivo é não apenas melhorar sua saúde bucal, mas também promover um sorriso saudável que você possa sentir orgulho.</p>
-        <h3 class="h3Center">Compromisso com o Cuidado Personalizado</h3>
-        <p>Nossa equipe de profissionais altamente qualificados está aqui para oferecer cuidados personalizados que atendem às suas necessidades individuais. Valorizamos a educação contínua e o uso das mais recentes tecnologias odontológicas para garantir que cada visita à Clínica Sorriso Perfeito seja confortável, eficiente e eficaz.</p>
-        <h3 class="h3Center">Por que Escolher a Clínica Sorriso Perfeito?</h3>
-        <p>Profissionais apaixonados pela odontologia, comprometidos com sua saúde bucal. Ambiente acolhedor e familiar para que você se sinta confortável durante suas consultas. Serviços abrangentes que incluem desde consultas de rotina até tratamentos estéticos avançados.</p>
-        <p>Atendimento personalizado que coloca suas necessidades e bem-estar em primeiro lugar. Estamos aqui para cuidar do seu sorriso e da sua saúde bucal de maneira integral. Agende sua consulta hoje mesmo e descubra por que tantos pacientes confiam na Clínica Sorriso Perfeito para seu cuidado odontológico.</p>
-        <h2>CONHEÇA A NOSSA EQUIPE</h2>
-        <p>Na Clínica Sorriso Perfeito, nossa equipe é composta por profissionais apaixonados e dedicados à sua saúde bucal. Conheça os especialistas que estão aqui para cuidar do seu sorriso:</p>
+        <h2>PLANOS DE TRATAMENTOS</h2>
+        <section class="treatmentPlans aboutDoctor">
+            <h3>Plano Básico:</h3>
+            <h3>Manutenção Preventiva</h3>
+            <h2>Inclui:</h2>
+            <ul>
+                <li>Consulta de rotina a cada 6 meses</li>
+                <li>Limpeza dental profissional anual
+                </li>
+                <li>Radiografias periódicas conforme necessário</li>
+            </ul>
+            <h2>Benefícios:</h2>
+            <ul>
+                <li>Prevenção de cáries e doenças periodontais</li>
+                <li>Diagnóstico precoce de problemas dentários</li>
+                <li>Descontos em tratamentos adicionais</li>
+            </ul>
+            <h2>Preço:</h2>
+            <ul>
+                <li>R$ 200 por ano</li>
+            </ul>
+            <span class="btnHirePlans" id="HirePlans1" data-type="planOne">CONTRATAR PLANO</span>
+        </section>
 
-        <section class="aboutDoctor">
-            <div class="photoDoctor">
-                <img src="../img/doctorJoao.jpg" alt="Doutor João Silva">
-            </div>
-            <h3>DR. JOÃO SILVA</h3>
-            <h2>CIRURGIÃO DENTISTA</h2>
-            <p>Com mais de 15 anos de experiência na odontologia, o Dr. João Silva é especializado em procedimentos cirúrgicos e implantes dentários. Ele é conhecido por seu compromisso com o conforto e bem-estar dos pacientes.</p>
+        <section class="treatmentPlans aboutDoctor">
+            <h3>Plano Família:</h3>
+            <h3>Cuidados Abrangentes</h3>
+            <h2>Inclui para cada membro:</h2>
+            <ul>
+                <li>Consultas de rotina semestrais</li>
+                <li>Limpezas dentais duas vezes por ano</li>
+                <li>Exames radiográficos anuais</li>
+                <li>Emergências odontológicas cobertas</li>
+            </ul>
+            <h2>Benefícios:</h2>
+            <ul>
+                <li>Cuidados acessíveis para toda a família</li>
+                <li>Descontos especiais em tratamentos ortodônticos</li>
+                <li>Opções personalizadas para cada idade</li>
+            </ul>
+            <h2>Preço:</h2>
+            <ul>
+                <li>R$ 400 por ano para o primeiro membro</li>
+                <li>R$ 350 por ano para cada membro adicional</li>
+            </ul>
+            <span class="btnHirePlans" id="HirePlans2">CONTRATAR PLANO</span>
         </section>
-        <section class="aboutDoctor">
-            <div class="photoDoctor">
-                <img src="../img/doctorAna.jpg" alt="Doutora Ana Santos">
-            </div>
-            <h3>DRª. ANA SANTOS </h3>
-            <h2>ORTODONTISTA</h2> 
-            <p>A Dra. Ana Santos é nossa especialista em ortodontia, com formação sólida e vasta experiência em correção de dentes desalinhados. Ela está comprometida em criar sorrisos bonitos e funcionais para todos os seus pacientes.</p>
+        <section class="treatmentPlans aboutDoctor">
+            <h3>Plano Premium:</h3>
+            <h3>Sorriso Completo</h3>
+            <h2>Inclui:</h2>
+            <ul>
+                <li>Consultas de rotina trimestrais</li>
+                <li>Limpezas dentais ilimitadas</li>
+                <li>Radiografias e exames abrangentes</li>
+                <li>Tratamentos estéticos avançados (clareamento, facetas)</li>
+                <li>Implantes dentários e restaurações incluídas</li>
+            </ul>
+            <h2>Benefícios:</h2>
+            <ul>
+                <li>Prioridade no agendamento de consultas</li>
+                <li>Acompanhamento personalizado com especialistas</li>
+                <li>Investimento no seu sorriso e saúde bucal a longo prazo</li>
+            </ul>
+            <h2>Preço:</h2>
+            <ul>
+                <li>R$ 800 por ano</li>
+            </ul>
+            <span class="btnHirePlans" id="HirePlans3">CONTRATAR PLANO</span>
         </section>
-        <section class="aboutDoctor">
-            <div class="photoDoctor">
-                <img src="../img/doctorMaria.jpg" alt="Doutora Maria Oliveira">
-            </div>
-        <h3>DRª. MARIA OLIVEIRA</h3>
-        <h2>PERIODONTISTA</h2>
-        <p>Com um enfoque especial em saúde das gengivas, a Dra. Maria Oliveira oferece tratamentos avançados de periodontia para manter a saúde bucal de nossos pacientes em excelentes condições.</p>
+        <section class="tips">
+            <h2>DICAS DE SAÚDE BUCAL</h2>
+            <p>Na Clínica Sorriso Perfeito, acreditamos que a saúde bucal é essencial para o seu bem-estar geral. Aqui
+                estão algumas dicas para ajudar você a manter um sorriso saudável e bonito:</p>
+            <span class="bold">Escovação Adequada:</span>
+            <p>Escove os dentes pelo menos duas vezes ao dia, de preferência após as refeições, utilizando uma escova de
+                cerdas macias e trocando-a a cada 3 meses.</p>
+            <span class="bold">Uso de Fio Dental:</span>
+            <p>Use fio dental diariamente para remover placa bacteriana e restos de alimentos entre os dentes e ao longo
+                da linha da gengiva.</p>
+            <span class="bold">Alimentação Saudável:</span>
+            <p>Consuma uma dieta balanceada e evite alimentos ricos em açúcar, que podem contribuir para cáries e
+                problemas dentários.</p>
+            <span class="bold">Visitas Regulares ao Dentista:</span>
+            <p>Agende consultas de rotina a cada 6 meses para check-ups e limpezas profissionais, mesmo se não houver
+                problemas aparentes.</p>
+            <span class="bold">Cuidados com Próteses e Aparelhos:</span>
+            <p>Mantenha limpas e bem cuidadas as dentaduras, pontes, aparelhos ortodônticos e outros dispositivos
+                dentários.</p>
+            <span class="bold">Evite Hábitos Danosos:</span>
+            <p>Evite roer unhas, morder objetos duros e outros hábitos que possam danificar os dentes e gengivas.</p>
+            <span class="bold">Use Enxaguante Bucal Adequado:</span>
+            <p>Escolha um enxaguante bucal sem álcool para ajudar a combater bactérias e manter o hálito fresco.</p>
+            <span class="bold">Proteção Durante o Esporte:</span>
+            <p>Use um protetor bucal ao praticar esportes de contato para proteger os dentes contra impactos e lesões.
+            </p>
+            <span class="bold">Atenção aos Sinais de Problemas:</span>
+            <p>Esteja atento a sinais como dor nos dentes ou gengivas, sensibilidade ao frio ou calor, e sangramento ao
+                escovar.</p>
+            <span class="bold">Educação e Informação:</span>
+            <p>Mantenha-se informado sobre práticas de saúde bucal atualizadas e educativas para melhorar e manter sua
+                saúde bucal ao longo da vida.</p>
+            <p class="lastP">Na Clínica Sorriso Perfeito, estamos comprometidos em cuidar do seu sorriso e da sua saúde bucal com profissionalismo e atenção personalizada. Entre em contato  para agendar sua consulta e começar sua jornada para um sorriso saudável hoje mesmo!</p>
         </section>
-        <section class="aboutDoctor">
-            <div class="photoDoctor supportTeam">
-                <img src="../img/supportTeam.jpg" alt="Equipe de apoio">
-            </div>
-            <h3>EQUIPE DE APOIO</h3>
-            <p>Nossa equipe de apoio inclui assistentes treinados e profissionais administrativos que estão sempre prontos para ajudar e garantir que sua experiência na Clínica Sorriso Perfeito seja positiva e acolhedora.</p>
-        </section>
-        <p>Cada membro de nossa equipe é escolhido não apenas por suas habilidades clínicas excepcionais, mas também por seu compromisso com o atendimento ao paciente. Estamos aqui para cuidar do seu sorriso com profissionalismo, empatia e cuidado individualizado.</p>
     </main>
     <footer>
-        
+
         <div>
             <p>&copy; Sorriso Perfeito </p>
             <p>Desenvolvido por Vitor Augusto</p>
