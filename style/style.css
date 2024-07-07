@@ -240,3 +240,8 @@ p {
 .h3Center {
     text-align: center;
 }
+
+
+#pageCurrent {
+    color: red;
+}
