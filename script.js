@@ -15,12 +15,14 @@ function menu() {
         openMenu.dataset.condition = 'off'
         openMenu.style.display = 'none'
         closeMenu.style.display = 'inline'
-        menu.style.display = 'flex'
+        menu.style.width = '100vw'
+        // menu.style.display = 'flex'
     } else {
         openMenu.dataset.condition = 'on'
         openMenu.style.display = 'inline'
         closeMenu.style.display = 'none'
-        menu.style.display = 'none'
+        menu.style.width = '0vw'
+        // menu.style.display = 'none'
     }
 }
 
