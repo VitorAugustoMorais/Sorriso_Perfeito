@@ -297,3 +297,7 @@ p {
 .tips p:nth-of-type(12) {
     margin: 1rem 1rem;
 }
+
+main div {
+    padding: 1rem;
+}
